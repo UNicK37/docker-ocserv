@@ -69,6 +69,7 @@ WORKDIR /etc/ocserv
 
 COPY All /etc/ocserv/config-per-group/All
 COPY cn-no-route.txt /etc/ocserv/config-per-group/Route
+COPY LanOnly /etc/ocserv/config-per-group/LanOnly
 
 COPY docker-entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
